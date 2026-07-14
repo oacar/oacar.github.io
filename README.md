@@ -7,5 +7,5 @@ Published at `https://www.acar.one/`.
 ## Routes
 
 - `/` — app directory
-- `/ironlog/` — IronLog support
-- `/ironlog/privacy.html` — IronLog privacy policy
+- `/setvance/` — Setvance support
+- `/setvance/privacy.html` — Setvance privacy policy
