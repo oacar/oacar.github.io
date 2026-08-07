@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for the Pixel Bridge iPhone and Pixel Watch apps.">
+  <title>Pixel Bridge Privacy Policy</title>
+  <link rel="canonical" href="https://www.acar.one/pixel-bridge/privacy.html">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <main class="shell">
+    <a class="wordmark" href="./">Pixel Bridge</a>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective date: August 7, 2026</p>
+
+    <div class="notice">Pixel Bridge does not send notification content or other app data to the developer. It has no account, developer-operated server, analytics, advertising, or cloud notification relay. Notification transfer occurs locally between your iPhone and watch over Bluetooth.</div>
+
+    <h2>How Pixel Bridge handles data</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th scope="col">Data</th><th scope="col">How it is used and stored</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Notification source, title, subtitle, message, and date that iOS makes available</td><td>Transferred locally over Bluetooth and held in watch-app memory for display. Pixel Bridge does not write this content to its own database or upload it. Wear OS can retain a posted notification card until Pixel Bridge cancels it.</td></tr>
+          <tr><td>Blocked source-app identifiers</td><td>Stored in the watch app's private local preferences so blocked sources remain blocked. No notification content is stored with them.</td></tr>
+          <tr><td>One Bluetooth reconnect target</td><td>Stored only on the watch as encrypted ciphertext protected by Android Keystore. App backup is disabled. Reset connection deletes it.</td></tr>
+          <tr><td>Connection preference</td><td>A true-or-false local watch preference records whether you requested a persistent connection. It contains no notification content or device identifier.</td></tr>
+          <tr><td>Connection diagnostics</td><td>Bounded, in-memory states, counts, timings, generations, and fixed reason codes. They exclude notification content, app identifiers, Bluetooth addresses, and stable device identifiers. Pixel Bridge does not send them automatically.</td></tr>
+          <tr><td>Name, email, location, advertising identifier, or account information</td><td>Not collected by the apps.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Notification privacy</h2>
+    <p>Pixel Bridge uses Apple's system-provided Apple Notification Center Service. It displays only the details that iOS gives to the paired watch under your notification-preview settings. Pixel Bridge does not try to reveal hidden previews.</p>
+    <p>Native Wear OS notification cards use private visibility and a generic public version. Pixel Bridge cancels its current cards when the Bluetooth session ends, when you reset the connection, and when the watch-app process starts. Wear OS controls system-level notification storage and can retain a card until cancellation.</p>
+
+    <h2>Bluetooth and permissions</h2>
+    <p>The iPhone app uses Bluetooth peripheral access to advertise a small pairing service and preserve pairing state in the background. That service carries connection state, not notification content. The watch app uses nearby-device access to scan, pair, connect, and reconnect. It uses notification permission to show iPhone notification cards and an ongoing connection notice.</p>
+    <p>The watch app does not use Bluetooth scan results for location. Pixel Bridge does not request location permission.</p>
+
+    <h2>Data sharing and tracking</h2>
+    <p>Pixel Bridge does not sell, rent, share, or use app data for tracking. It includes no third-party analytics, advertising, or crash-reporting SDK.</p>
+    <p>Apple and Google can process app-store and device-service data under their own policies. This policy describes data handled by Pixel Bridge and the developer.</p>
+
+    <h2>Deletion</h2>
+    <p>Use <strong>Reset connection</strong> on the watch to delete the encrypted reconnect target and clear the current notification session. Manage blocked sources in the watch app. Uninstalling Pixel Bridge from the watch removes its local preferences and encrypted ciphertext. System Bluetooth bonds must be removed separately in each device's Bluetooth settings.</p>
+
+    <h2>Support messages</h2>
+    <p>If you contact support, the developer receives the information that you choose to include in your email. Do not include notification text, Bluetooth addresses, or device identifiers. Support messages are used only to answer your request.</p>
+
+    <h2>Children's privacy</h2>
+    <p>Pixel Bridge is not directed at children under 13 and does not knowingly collect personal information from children. It has no account, messaging, or social feature.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the effective date above will be updated. Material changes will also be identified in the relevant app-store release notes.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy: <a href="mailto:omeracar0@gmail.com">omeracar0@gmail.com</a></p>
+
+    <footer>
+      <div class="footer-links">
+        <a href="./">Support</a>
+        <a href="setup.html">Setup Guide</a>
+        <a href="../">All Apps</a>
+      </div>
+      <p>Pixel Bridge &middot; <a href="https://www.acar.one/pixel-bridge/privacy.html">https://www.acar.one/pixel-bridge/privacy.html</a></p>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Support and compatibility information for Pixel Bridge, an iPhone and Pixel Watch notification companion.">
+  <title>Pixel Bridge Support</title>
+  <link rel="canonical" href="https://www.acar.one/pixel-bridge/">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <main class="shell">
+    <a class="wordmark" href="../">Apps by Omer Acar</a>
+    <h1>Pixel Bridge support</h1>
+    <p class="lede">See the notification details that iOS makes available on a supported Pixel Watch. The connection stays local over Bluetooth.</p>
+
+    <div class="notice">
+      <strong>Private preview</strong><br>
+      Pixel Bridge is not yet available in either public app store. Compatibility and release plans can change during testing.
+    </div>
+
+    <h2>What you need</h2>
+    <ul class="features">
+      <li>The Pixel Bridge companion app on an iPhone</li>
+      <li>The Pixel Bridge watch app on a Pixel Watch</li>
+      <li>Bluetooth enabled on both devices</li>
+      <li>Share System Notifications enabled for the watch in iPhone Bluetooth settings</li>
+    </ul>
+    <p>The current preview has been tested only with an iPhone 17 Pro Max on an iOS 27 beta and a Pixel Watch 4 running Wear OS build <code>CP2A.260603.001.S1</code>. Beta results do not establish compatibility with a stable iOS release. Other models are not yet supported.</p>
+
+    <h2>How it works</h2>
+    <p>The iPhone app helps the watch find and pair with the iPhone. After pairing, the watch reads notifications from Apple's system-provided Apple Notification Center Service. The iPhone app does not read or relay notification content.</p>
+    <p>The iPhone app can stay in the background after setup. You can also stop pairing mode without removing the Bluetooth bond.</p>
+
+    <h2>Setup and troubleshooting</h2>
+    <p>Follow the <a href="setup.html">Pixel Bridge setup guide</a> to pair the apps, grant the required permissions, and recover from a stale connection.</p>
+
+    <h2>Limits</h2>
+    <ul class="features">
+      <li>Bluetooth range only; there is no internet or cloud relay</li>
+      <li>Read-only notifications; replies and iPhone dismissal are not supported</li>
+      <li>No missed-notification backfill after an out-of-range period</li>
+      <li>The watch shows only the details that iOS exposes under your preview settings</li>
+    </ul>
+
+    <h2>Need help?</h2>
+    <p>Email <a href="mailto:omeracar0@gmail.com">omeracar0@gmail.com</a>. Include the iPhone model, iOS version, watch model, Wear OS version, and the connection state shown by Pixel Bridge. Do not send notification text, Bluetooth addresses, or device identifiers.</p>
+
+    <footer>
+      <div class="footer-links">
+        <a href="setup.html">Setup Guide</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="mailto:omeracar0@gmail.com">Email Support</a>
+        <a href="../">All Apps</a>
+      </div>
+      <p>&copy; 2026 Omer Acar. All rights reserved.</p>
+    </footer>
+  </main>
+</body>
+</html>

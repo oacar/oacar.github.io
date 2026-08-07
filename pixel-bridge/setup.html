@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Setup and troubleshooting instructions for Pixel Bridge on iPhone and Pixel Watch.">
+  <title>Pixel Bridge Setup</title>
+  <link rel="canonical" href="https://www.acar.one/pixel-bridge/setup.html">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <main class="shell">
+    <a class="wordmark" href="./">Pixel Bridge</a>
+    <h1>Setup guide</h1>
+    <p class="lede">Install both apps, pair once, and let the watch connect directly to Apple's notification service.</p>
+
+    <div class="notice">Pixel Bridge is a private preview. These steps apply only to the builds provided by the developer.</div>
+
+    <h2>Before you start</h2>
+    <ol class="features">
+      <li>Install the Pixel Bridge companion on the iPhone.</li>
+      <li>Install Pixel Bridge on the Pixel Watch.</li>
+      <li>Turn on Bluetooth on both devices and keep them close together.</li>
+      <li>Allow Bluetooth access on the iPhone.</li>
+      <li>Allow nearby-device and notification access on the watch.</li>
+    </ol>
+
+    <h2>Pair the devices</h2>
+    <ol class="features">
+      <li>Open Pixel Bridge on the iPhone and tap <strong>Start pairing</strong>.</li>
+      <li>Open Pixel Bridge on the watch and tap <strong>Find iPhone</strong>.</li>
+      <li>Accept the system pairing prompts on both devices.</li>
+      <li>Wait until the watch reports <strong>Connected</strong>.</li>
+      <li>On the iPhone, open <strong>Settings &rarr; Bluetooth</strong>, select the paired watch accessory, and enable <strong>Share System Notifications</strong>.</li>
+      <li>Send a test notification while the iPhone is locked.</li>
+    </ol>
+    <p>After setup, you can tap <strong>Stop pairing</strong> on the iPhone. This stops discovery but keeps the existing bond.</p>
+
+    <h2>If notifications do not appear</h2>
+    <ul class="features">
+      <li>Confirm that both devices have Bluetooth enabled and are within range.</li>
+      <li>Confirm that Share System Notifications remains enabled in iPhone Bluetooth settings.</li>
+      <li>Check the iPhone's notification and preview settings for the source app. Pixel Bridge cannot reveal details that iOS withholds.</li>
+      <li>Confirm that Pixel Bridge has notification permission on the watch.</li>
+      <li>Wait up to two minutes after returning to Bluetooth range.</li>
+    </ul>
+
+    <h2>If the watch reports a stale bond</h2>
+    <ol class="features">
+      <li>Use <strong>Reset connection</strong> in the watch app.</li>
+      <li>Remove the old Pixel Bridge or watch accessory pairing from Bluetooth settings on both devices.</li>
+      <li>Restart pairing from the iPhone app.</li>
+    </ol>
+    <p>Reset connection removes Pixel Bridge's encrypted reconnect target. It does not silently remove the system Bluetooth bond.</p>
+
+    <h2>If automatic recovery fails</h2>
+    <p>Open both apps and check their connection states. If retry does not work, use the stale-bond steps above. For support, send only the displayed state and sanitized reason code. Do not send notification content, raw Bluetooth logs, addresses, or device identifiers.</p>
+
+    <footer>
+      <div class="footer-links">
+        <a href="./">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="mailto:omeracar0@gmail.com">Email Support</a>
+      </div>
+      <p>&copy; 2026 Omer Acar. All rights reserved.</p>
+    </footer>
+  </main>
+</body>
+</html>
